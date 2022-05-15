@@ -6,7 +6,7 @@ module.exports = {
     {
       name,
       script: path.resolve(__dirname, './dist/index.js'),
-      args: 'one two',
+      args: '',
       instances: require('os').cpus().length,
       autorestart: true,
       watch: true,

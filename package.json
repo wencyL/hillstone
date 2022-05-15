@@ -37,23 +37,21 @@
     "koa": "^2.13.4",
     "koa-bodyparser": "^4.2.1",
     "koa-router": "^10.1.1",
+    "koa2-cors": "^2.0.6",
     "mysql": "^2.17.1",
     "ts-loader": "^9.3.0",
     "tsconfig-paths": "^4.0.0",
     "typeorm": "^0.2.17"
   },
   "devDependencies": {
-    "@types/node": "^17.0.31",
-    "cross-env": "^7.0.3",
-    "nodemon": "^2.0.16",
-    "ts-node": "^10.7.0",
-    "typescript": "^4.6.4",
-    "webpack": "^5.72.0",
-    "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^4.9.0",
     "@types/koa": "^2.0.48",
     "@types/koa-bodyparser": "^4.2.2",
     "@types/koa-router": "^7.0.40",
-    "pm2": "^3.5.0"
+    "@types/node": "^17.0.31",
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.16",
+    "pm2": "^3.5.0",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.4"
   }
 }

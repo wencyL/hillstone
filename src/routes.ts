@@ -2,8 +2,8 @@ import UserController from './controller/userController';
 
 export default [
   {
-    path: '/user',
+    path: '/userList',
     method: 'get',
-    action: UserController.getUser
+    action: UserController.getUserList
   }
 ];

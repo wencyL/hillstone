@@ -3,16 +3,10 @@ import { getManager } from 'typeorm';
 import User from '../entity/user';
 
 export default class UserService {
-  static async getUser(context?: Context) {
+  static async getUserList(context?: Context) {
     const userRepository = getManager().getRepository(User);
-    const newUser = userRepository.create({
-      name: 'lucy',
-      age: 25,
-      introduce: "a good girl"
-    });
+    const userList = await userRepository.find();
 
-    await userRepository.save(newUser);
-
-    return newUser;
+    return userList;
   }
 }

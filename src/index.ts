@@ -2,6 +2,7 @@ import 'reflect-metadata';
 import * as Koa from 'koa';
 import { createConnection } from 'typeorm';
 import * as Router from 'koa-router';
+import * as cors from "koa2-cors";
 import * as bodyParser from 'koa-bodyparser';
 import AppRoutes from './routes';
 
@@ -13,6 +14,7 @@ createConnection()
 
     AppRoutes.forEach(route => router[route.method](route.path, route.action));
 
+    app.use(cors());
     app.use(bodyParser());
     app.use(router.routes());
     app.use(router.allowedMethods());
